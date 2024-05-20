@@ -1,3 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.text-gradient {
+  background: linear-gradient(to right, #ff7e5f, #feb47b, #ff6a95, #f77062, #667eea);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 .App {
   text-align: center;
 }
@@ -35,4 +45,27 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.purchase-button {
+  background-color: #1c1c1e;
+  background: linear-gradient(to right, #c840ad, #feb47b, #ff6a95, #f77062, #667eea);
+  padding: 12px 24px;
+  border: 2px solid transparent;
+  border-radius: 30px;
+  font-size: 2rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: inline-block;
+}
+
+.purchase-button:hover {
+  border-color: #ff7e5f;
+}
+
+.purchase-button span {
+  background: white;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
